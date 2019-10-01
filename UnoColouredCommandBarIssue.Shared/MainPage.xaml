@@ -1,0 +1,69 @@
+﻿<Page
+    x:Class="UnoColouredCommandBarIssue.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ios="http://uno.ui/ios"
+    xmlns:not_ios="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:not_win="http:/uno.ui/not_win"
+    xmlns:local="using:UnoColouredCommandBarIssue"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d ios not_win">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <Border Grid.Row="0" CornerRadius="4" BorderBrush="DarkGray" BorderThickness="2" 
+                not_ios:Margin="12,8,12,20"
+                ios:Margin="12,28,12,20"
+                Padding="8"
+                Background="{ThemeResource HeaderBackgroundBrush}">
+            <Grid HorizontalAlignment="Stretch" >
+                <StackPanel>
+                    <TextBlock Text="A test App" Margin="0,0,0,0" FontWeight="SemiBold"
+                               Foreground="{StaticResource AppContrastForegroundBrush}"
+                               Style="{StaticResource TextTitle1Style}"/>
+                </StackPanel>
+
+                <CommandBar Margin="12,0,0,0" HorizontalAlignment="Right" Background="Transparent">
+                    <CommandBar.Resources>
+                        <ResourceDictionary>
+                            <ResourceDictionary.ThemeDictionaries>
+                                <ResourceDictionary x:Key="Light">
+                                    <SolidColorBrush x:Key="CommandBarForeground" Color="{ThemeResource AppContrastForegroundColor}"/>
+                                    <SolidColorBrush x:Key="AppBarEllipsisButtonForeground" Color="{ThemeResource AppContrastForegroundColor}"/>
+                                    <SolidColorBrush x:Key="AppBarEllipsisButtonForegroundPointerOver" Color="{ThemeResource AppContrastForegroundColor}"/>
+                                    <SolidColorBrush x:Key="AppBarEllipsisButtonForegroundPressed" Color="{ThemeResource AppContrastForegroundColor}"/>
+                                    <SolidColorBrush x:Key="AppBarButtonForeground" Color="{ThemeResource AppContrastForegroundColor}"/>
+                                    <SolidColorBrush x:Key="AppBarButtonForegroundPointerOver" Color="{ThemeResource AppContrastForegroundColor}"/>
+                                    <SolidColorBrush x:Key="AppBarButtonForegroundPressed" Color="{ThemeResource AppContrastForegroundColor}"/>
+                                </ResourceDictionary>
+                            </ResourceDictionary.ThemeDictionaries>
+                        </ResourceDictionary>
+                    </CommandBar.Resources>
+                    <CommandBar.CommandBarOverflowPresenterStyle>
+                        <Style TargetType="CommandBarOverflowPresenter">
+                            <Setter Property="Background" Value="{StaticResource HeaderBackgroundBrush}" />
+                        </Style>
+                    </CommandBar.CommandBarOverflowPresenterStyle>
+                    <CommandBar.PrimaryCommands>
+                        <AppBarButton Icon="Setting" Label="Settings" Command="{x:Bind VM.ShowSettingsCommand, Mode=OneTime}"
+                                      not_win:Foreground="{StaticResource AppContrastForegroundBrush}"/>
+                    </CommandBar.PrimaryCommands>
+                    <CommandBar.SecondaryCommands>
+                        <AppBarButton Label="About" Command="{x:Bind VM.AboutCommand}"
+                                  Foreground="{StaticResource AppContrastForegroundBrush}"/>
+                        <AppBarButton Label="Sign out" Command="{x:Bind VM.SignOutCommand}"
+                                  Foreground="{StaticResource AppContrastForegroundBrush}"/>
+                    </CommandBar.SecondaryCommands>
+                </CommandBar>
+            </Grid>
+        </Border>
+
+        <TextBlock Grid.Row="1"  Text="Should have white icons in the title bar" Margin="20" FontSize="30" TextWrapping="Wrap" />
+    </Grid>
+</Page>

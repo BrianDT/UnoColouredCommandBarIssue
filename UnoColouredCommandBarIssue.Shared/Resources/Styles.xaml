@@ -1,0 +1,32 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+
+    <!--Colours-->
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <Color x:Key="HeaderBackgroundColor">#FF00335B</Color>
+            <Color x:Key="AppContrastForegroundColor">White</Color>
+            <Color x:Key="AppForegroundColor">Black</Color>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Dark">
+            <Color x:Key="HeaderBackgroundColor">#FF1BA1E2</Color>
+            <Color x:Key="AppContrastForegroundColor">Black</Color>
+            <Color x:Key="AppForegroundColor">White</Color>
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+
+    <SolidColorBrush x:Key="HeaderBackgroundBrush" Color="{ThemeResource HeaderBackgroundColor}"/>
+    <SolidColorBrush x:Key="AppContrastForegroundBrush" Color="{ThemeResource AppContrastForegroundColor}"/>
+    <SolidColorBrush x:Key="AppForegroundBrush" Color="{ThemeResource AppForegroundColor}"/>
+
+    <x:Double x:Key="FontSizeLarge">24</x:Double>
+
+    <Style x:Name="TextTitle1Style" TargetType="TextBlock">
+        <Setter Property="FontWeight" Value="SemiLight"/>
+        <Setter Property="FontSize" Value="{StaticResource FontSizeLarge}" />
+        <!--<Setter Property="Foreground" Value="{StaticResource AppForegroundBrush}" />-->
+    </Style>
+
+</ResourceDictionary>

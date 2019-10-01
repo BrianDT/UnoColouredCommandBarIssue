@@ -3,3 +3,11 @@
 ################################################################################
 
 /.vs
+/UnoColouredCommandBarIssue.Droid/bin/Debug
+/UnoColouredCommandBarIssue.Droid/obj
+/UnoColouredCommandBarIssue.iOS/bin/iPhone/Debug
+/UnoColouredCommandBarIssue.iOS/obj
+/UnoColouredCommandBarIssue.UWP/bin/x86/Debug
+/UnoColouredCommandBarIssue.UWP/obj
+/UnoColouredCommandBarIssue.Wasm/obj
+/UnoColouredCommandBarIssue.Wasm/bin/Debug/netstandard2.0
