@@ -26,5 +26,10 @@ namespace Vssl.Samples.ViewModelInterfaces
         /// Gets a command that signs out of the app
         /// </summary>
         ICommand SignOutCommand { get; }
+
+        /// <summary>
+        /// Gets a value indicating whether a button tap occurred (acts as a toggle)
+        /// </summary>
+        bool WasTapped { get; }
     }
 }

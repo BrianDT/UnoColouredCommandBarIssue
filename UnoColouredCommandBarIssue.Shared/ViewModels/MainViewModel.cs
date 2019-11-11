@@ -41,6 +41,11 @@ namespace Vssl.Samples.ViewModels
         public ICommand SignOutCommand { get; private set; }
 
         /// <summary>
+        /// Gets a value indicating whether a button tap occurred (acts as a toggle)
+        /// </summary>
+        public bool WasTapped { get; private set; }
+
+        /// <summary>
         /// Displays the settings
         /// </summary>
         /// <param name="parameter">An optional parameter</param>
@@ -48,6 +53,8 @@ namespace Vssl.Samples.ViewModels
         public async Task ShowSettings(object parameter)
         {
             // Not implemented in this sample
+            this.WasTapped = !this.WasTapped;
+            this.OnPropertyChanged("WasTapped");
             await Task.CompletedTask;
         }
 
@@ -59,6 +66,8 @@ namespace Vssl.Samples.ViewModels
         public async Task About(object parameter)
         {
             // Not implemented in this sample
+            this.WasTapped = !this.WasTapped;
+            this.OnPropertyChanged("WasTapped");
             await Task.CompletedTask;
         }
 
@@ -70,6 +79,8 @@ namespace Vssl.Samples.ViewModels
         public async Task SignOut(object parameter)
         {
             // Not implemented in this sample
+            this.WasTapped = !this.WasTapped;
+            this.OnPropertyChanged("WasTapped");
             await Task.CompletedTask;
         }
     }
