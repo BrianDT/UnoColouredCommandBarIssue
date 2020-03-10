@@ -15,6 +15,21 @@
     </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="500" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="req1.FontSize" Value="30"/>
+                        <Setter Target="req2.FontSize" Value="30"/>
+                        <Setter Target="req3.FontSize" Value="30"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -76,7 +91,11 @@
             </Grid>
         </Border>
 
-        <TextBlock Grid.Row="1"  Text="Should have white icons in the title bar" Margin="20" FontSize="30" TextWrapping="Wrap" />
+        <StackPanel Grid.Row="1">
+            <TextBlock x:Name="req1" Text="&#x2022; Should have white icons in the title bar" Margin="20,20,20,0" FontSize="16" TextWrapping="Wrap" />
+            <TextBlock x:Name="req2" Text="&#x2022; Should have white ellipsis" Margin="20,8,20,0" FontSize="16" TextWrapping="Wrap" />
+            <TextBlock x:Name="req3" Text="&#x2022; Should have white text on a dark background in the secondary menu" Margin="20,8,20,0" FontSize="16" TextWrapping="Wrap" />
+        </StackPanel>
 
         <Border Grid.Row="2" HorizontalAlignment="Center" Padding="16" BorderThickness="1" BorderBrush="Moccasin"
                 Visibility="{x:Bind VM.WasTapped, Mode=OneWay, Converter={StaticResource BooleanToVisibilityConverter}}">
