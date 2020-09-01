@@ -23,6 +23,7 @@ Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		UnoColouredCommandBarIssue.Shared\UnoColouredCommandBarIssue.Shared.projitems*{5341511c-6491-4cd7-a87b-909f0ed0d7a4}*SharedItemsImports = 4
 		UnoColouredCommandBarIssue.Shared\UnoColouredCommandBarIssue.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
+		UnoColouredCommandBarIssue.Shared\UnoColouredCommandBarIssue.Shared.projitems*{a704ad3a-9808-47e7-b58b-41f03e929d30}*SharedItemsImports = 5
 		UnoColouredCommandBarIssue.Shared\UnoColouredCommandBarIssue.Shared.projitems*{c16bcf50-5b58-4510-a39e-f98b73a33ee7}*SharedItemsImports = 4
 		UnoColouredCommandBarIssue.Shared\UnoColouredCommandBarIssue.Shared.projitems*{daa9707b-4dba-4f7e-804c-45262f4738d1}*SharedItemsImports = 4
 	EndGlobalSection
@@ -157,7 +158,6 @@ Global
 		{C16BCF50-5B58-4510-A39E-F98B73A33EE7}.Debug|ARM.Deploy.0 = Debug|Any CPU
 		{C16BCF50-5B58-4510-A39E-F98B73A33EE7}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{C16BCF50-5B58-4510-A39E-F98B73A33EE7}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{C16BCF50-5B58-4510-A39E-F98B73A33EE7}.Debug|iPhone.Deploy.0 = Debug|Any CPU
 		{C16BCF50-5B58-4510-A39E-F98B73A33EE7}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
 		{C16BCF50-5B58-4510-A39E-F98B73A33EE7}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{C16BCF50-5B58-4510-A39E-F98B73A33EE7}.Debug|iPhoneSimulator.Deploy.0 = Debug|Any CPU
@@ -205,6 +205,7 @@ Global
 		{DAA9707B-4DBA-4F7E-804C-45262F4738D1}.Debug|ARM.ActiveCfg = Debug|iPhone
 		{DAA9707B-4DBA-4F7E-804C-45262F4738D1}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{DAA9707B-4DBA-4F7E-804C-45262F4738D1}.Debug|iPhone.Build.0 = Debug|iPhone
+		{DAA9707B-4DBA-4F7E-804C-45262F4738D1}.Debug|iPhone.Deploy.0 = Debug|iPhone
 		{DAA9707B-4DBA-4F7E-804C-45262F4738D1}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
 		{DAA9707B-4DBA-4F7E-804C-45262F4738D1}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
 		{DAA9707B-4DBA-4F7E-804C-45262F4738D1}.Debug|x64.ActiveCfg = Debug|iPhone
