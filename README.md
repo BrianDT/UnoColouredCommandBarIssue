@@ -38,3 +38,9 @@ AppBar Secondary Menu ellipsis displayed: Yes
 AppBar Secondary Menu ellipsis in the correct colour: No
 Secondary Menu displayed on ellipsis tap: No
 Expands to avoids text clipping of icon text: Yes
+
+
+Separate issue raised for problem
+AppBar Secondary Menu ellipsis in the correct colour: #4396
+Secondary Menu displayed on ellipsis tap: #4394
+Expands to avoids text clipping of icon text: #4397
